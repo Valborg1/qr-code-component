@@ -11,11 +11,55 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+    body {
+      background-color: hsl(212, 45%, 89%);
+      font-family: Outfit, sans-serif;
+    }
+
+    .container {
+      width: 320px;
+      height: 499px;
+      background-color: hsl(0, 0%, 100%);
+      margin: 5.5% auto;
+      border-radius: 20px;
+    }
+
+    .qr-code {
+      width: 288px;
+      border-radius: 10px; 
+      margin: 16px;
+    }
+
+    .text {
+      margin: 0px 16px;
+      padding: 0px 16px;
+      text-align: center;
+    }
+
+    .text-preset-1 {
+      font-weight: 700;
+      font-size: 22px;  
+      margin: 0px;
+      color: rgba(31, 49, 79, 1);
+    }
+
+    .text-preset-2 {
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(104, 119, 141, 1);
+    }
+
 
   </style>
 </head>
 <body>
-
+  <div class="container">
+    <img src="./images/image-qr-code.png" alt="qr-code" class="qr-code" />
+    <div class="text">
+      <p class="text-preset-1">Improve your front-end skills by building projects</p>
+      <p class="text-preset-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
  
 </body>
 </html>
